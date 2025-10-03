@@ -10,7 +10,7 @@ const nextConfig = {
       // },
       {
         protocol:'https',
-        hostname:'online-teachers1to1.vercel.app',
+        hostname:'online-teachers1to1-front-9ax3tqm2u-faisalsagheers-projects.vercel.app',
         // pathname: '/media/**',
       }
     ],
