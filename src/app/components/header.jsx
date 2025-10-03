@@ -263,7 +263,7 @@ export default function Header() {
                     {/* RIGHT SIDE: Project Attribution in a single line */}
                     <div className="contact-info">
                         <div className="project-by-container">
-                            <span className="project-by-text">A project by</span>
+                            <span className="project-by-text">Produced by</span>
                             <a
                                 href="https://masfirms.com/"
                                 target="_blank"
@@ -277,7 +277,7 @@ export default function Header() {
                                     className="company-logo"
                                 />
                             </a>
-                            <span className="produced-by-text">produced by</span>
+                            <span className="produced-by-text">A Project by</span>
                             <a
                                 href="https://mastechz.com/"
                                 target="_blank"
