@@ -1,0 +1,488 @@
+/* Form Styles */
+:root {
+  --orange-primary: #ff7a00;
+  --orange-hover: #ff8c1a;
+  --border-color: #ff7a00;
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --text-secondary: #666666;
+}
+
+.form-container {
+  background-color: var(--bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.form-header {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+/* Increased title size and improved spacing */
+.form-title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: var(--text-color);
+  margin-bottom: 0.75rem;
+  line-height: 1.2;
+}
+
+.form-subtitle {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.form-section {
+  margin-bottom: 1.5rem;
+}
+
+.form-section.full-width {
+  grid-column: span 2;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.5px;
+}
+
+/* Increased input sizes and improved styling */
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 1rem 1.25rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  background-color: white;
+  font-size: 1rem;
+  min-height: 48px;
+}
+
+.form-textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  border-color: var(--orange-primary);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 122, 0, 0.1);
+}
+
+.form-error {
+  color: #ef4444;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+
+/* Form Actions */
+.form-actions {
+  grid-column: span 2;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #f0f0f0;
+}
+
+/* Increased button sizes */
+.cancel-button,
+.submit-button {
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  min-height: 48px;
+  transition: all 0.2s;
+}
+
+.cancel-button {
+  background-color: white;
+  color: var(--text-color);
+  border: 1px solid #e2e8f0;
+}
+
+.cancel-button:hover {
+  background-color: #f3f4f6;
+}
+
+.submit-button {
+  background-color: var(--orange-primary);
+  color: white;
+  border: none;
+}
+
+.submit-button:hover:not(:disabled) {
+  background-color: var(--orange-hover);
+}
+
+.submit-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Back button styling */
+.back-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: none;
+  border: none;
+  color: var(--orange-primary);
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem 0;
+  transition: color 0.2s;
+}
+
+.back-button:hover {
+  color: var(--orange-hover);
+}
+
+/* --- Step 1: Course Selection View --- */
+
+/* Improved responsive grid layout for larger cards */
+.course-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+  margin-bottom: 1.5rem;
+  padding: 0 1rem;
+}
+
+/* 2 columns on small tablets */
+@media (min-width: 640px) {
+  .course-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 3 columns on tablets and larger screens */
+@media (min-width: 768px) {
+  .course-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Enhanced course card styling with larger size */
+.course-card {
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  min-height: 320px;
+}
+
+.course-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  border-color: var(--orange-primary);
+}
+
+.course-image-container {
+  width: 100%;
+  height: 500px; 
+  background-color: #f3f4f6;
+  overflow: hidden;
+}
+
+.course-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.course-card:hover .course-image {
+  transform: scale(1.05);
+}
+
+.course-card-header {
+  padding: 1.25rem;
+  flex-grow: 1;
+}
+
+.course-card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+}
+
+.course-card-description {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+.course-card-footer {
+  padding: 0 1.25rem 1.25rem;
+}
+
+.select-button {
+  background-color: var(--orange-primary);
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+
+.select-button:hover {
+  background-color: var(--orange-hover);
+}
+
+/* Enhanced pagination controls */
+.pagination-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 1rem 1rem 1rem;
+  padding: 1.25rem;
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+}
+
+.pagination-info {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+/* --- Step 2: Teacher Selection View --- */
+
+/* Enhanced teacher grid layout */
+.teacher-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+  padding: 0 1rem;
+}
+
+@media (min-width: 640px) {
+  .teacher-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .teacher-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1400px) {
+  .teacher-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Enhanced teacher card styling */
+.teacher-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  min-height: 200px;
+}
+
+.teacher-card:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
+  border-color: var(--orange-primary);
+}
+
+.teacher-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .teacher-card-content {
+    flex-direction: row;
+    text-align: left;
+  }
+}
+
+/* Larger teacher avatar */
+.teacher-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
+.teacher-info {
+  flex: 1;
+}
+
+/* Enhanced teacher info styling */
+.teacher-name {
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: var(--text-color);
+  margin: 0 0 0.5rem 0;
+}
+
+.teacher-experience {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--orange-primary);
+  margin-bottom: 0.75rem;
+}
+
+.teacher-bio {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* --- Filter Bar Styles --- */
+
+/* Enhanced filter bar */
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+  padding: 1.25rem;
+  background-color: white;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  margin: 0 1rem 1.5rem 1rem;
+}
+
+.search-input-wrapper {
+  position: relative;
+  flex-grow: 1;
+  min-width: 300px;
+}
+
+.search-input {
+  padding-left: 3rem !important;
+  font-size: 1rem !important;
+  height: 48px !important;
+}
+
+.search-icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9ca3af;
+  pointer-events: none;
+}
+
+/* Enhanced empty and loading messages */
+.empty-message,
+.loading-message {
+  text-align: center;
+  padding: 3rem 2rem;
+  color: var(--text-secondary);
+  background-color: #f9fafb;
+  border-radius: 12px;
+  margin: 1.5rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #e5e7eb;
+}
+
+/* Mobile responsive improvements */
+@media (max-width: 768px) {
+  .form-title {
+    font-size: 1.875rem;
+  }
+
+  .form-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .form-container {
+    padding: 1.5rem;
+    margin: 0 0.5rem;
+  }
+
+  .form-header {
+    padding: 0 0.5rem;
+  }
+
+  .course-grid {
+    padding: 0 0.5rem;
+  }
+
+  .teacher-grid {
+    padding: 0 0.5rem;
+  }
+
+  .filter-bar {
+    margin: 0 0.5rem 1.5rem 0.5rem;
+  }
+
+  .pagination-controls {
+    margin: 2rem 0.5rem 1rem 0.5rem;
+  }
+
+  .empty-message,
+  .loading-message {
+    margin: 1.5rem 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-title {
+    font-size: 1.625rem;
+  }
+
+  .course-image-container {
+    height: 180px; /* Increased from 140px to 180px for better mobile image display */
+  }
+
+  .teacher-avatar {
+    width: 100px;
+    height: 100px;
+  }
+
+  .filter-bar {
+    padding: 1rem;
+  }
+}

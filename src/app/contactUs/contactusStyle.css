@@ -1,0 +1,300 @@
+@font-face {
+    font-family: IntertRegular;
+    src: url(../fonts/Intert-Regular.ttf);
+}
+
+@font-face {
+    font-family: RowdiesRegular;
+    src: url(../fonts/Rowdies-Regular.ttf);
+}
+
+* {
+    font-family: IntertRegular;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+.SectionTwoContact {
+    background-color: #fcf7ee;
+
+}
+
+.contact2 {
+    margin-top: 3%;
+}
+
+
+.contact24hrDiv h2 {
+    font-family: IntertRegular;
+    font-size: 45px;
+    max-width: 465px;
+    font-weight: 600;
+}
+
+.contactparaDiv p {
+    font-size: 16px;
+    max-width: 650px;
+}
+
+.contactFromDiv {
+    background-color: #FDE5E9;
+    border-radius: 20px;
+    border: 2px dashed #000000;
+    padding: 60px 75px;
+    width: 62%;
+}
+
+.inputDvi2 input {
+    width: 100%;
+    border: 2px dashed transparent;
+    background-color: #ffffff;
+    border: #ffffff;
+    padding: 16px 40px;
+    border-radius: 15px;
+}
+
+.inputDvi2 textarea {
+    width: 100%;
+    border: 2px dashed transparent;
+    background-color: #ffffff;
+    border: #ffffff;
+    padding: 16px 40px;
+    border-radius: 15px;
+    height: 215px;
+    overflow: auto;
+    resize: none;
+}
+
+.LMScontactbtn {
+    padding: 12px 40px;
+    background-color: #fc800a;
+    border-radius: 3.125em;
+    font-family: RowdiesRegular;
+    font-size: 16px;
+    color: #ffffff;
+    border: 2px solid transparent;
+    transition: all 0.5s linear;
+}
+
+
+
+.LMScontactbtn:hover {
+    background-color: #000000;
+}
+
+.sayHolleDiv {
+    background-image: url(../image/gradientbg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    border: 2px dashed #000000;
+    padding: 60px 55px;
+    gap: 25px;
+
+}
+
+.sayHolleDiv h2 {
+    font-family: RowdiesRegular;
+    font-size: 45px;
+}
+
+.sayHolleDiv p {
+    max-width: 428px;
+    font-size: 16px;
+}
+
+.sayHolleDiv img {
+    max-width: 428px;
+    border-radius: 20px;
+}
+
+.sayHolleDiv h3 {
+    font-family: RowdiesRegular;
+    font-size: 30px;
+}
+
+.sayHolleDiv h4 {
+    font-size: 16px;
+}
+
+
+.contactsocialIcon {
+    width: 35px;
+    height: 35px;
+    padding: 7px;
+    border-radius: 50%;
+    color: #000000;
+}
+
+
+.contactlocationDiv {
+    color: #ffffff;
+    background-color: #88B520;
+    padding: 40px 50px;
+    border-radius: 20px;
+    border: 2px dashed #000000;
+}
+
+.contactlocationDiv h3 {
+    font-family: RowdiesRegular;
+    font-size: 30px;
+}
+
+.contactlocationInnerDiv {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 12px;
+}
+
+.contlocIcon {
+    width: 25px;
+    height: 25px;
+}
+
+.contactlocationInnerDiv p {
+    font-family: RowdiesRegular;
+    font-size: 20px;
+}
+
+.contactlocationDiv2 {
+    background-color: #A5DBEA;
+    color: #000000;
+}
+
+.contactlocationDiv3 {
+    background-color: #FB8095;
+}
+.FooterCloudImgDiv{
+    width: 100%;
+}
+
+.contactfootercloud {
+    width: 100%;
+    background-color: #ffffff00;
+}
+
+.contlocAmin {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    margin-bottom: 5%;  
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 3 items per row */
+    gap: 20px; /* space between items */
+}
+
+/* Responsive for tablets */
+@media (max-width: 1024px) {
+    .contlocAmin {
+        grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+    .contlocAmin {
+        grid-template-columns: 1fr; /* single column on mobile */
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+
+@media only screen and (max-width: 1050px) {
+
+    .SectionTwoContact {
+        overflow-x: hidden;
+    }
+    .contlocAmin {
+        overflow-x: hidden;
+    }
+
+    .SectionTwoContact {
+        padding: 20px;
+        gap: 10px;
+    }
+
+    .contact24hrDiv h2 {
+        font-size: 22px;
+    }
+
+    .contactparaDiv p {
+        font-size: 14px;
+    }
+
+    .contact24hr {
+        width: 80px;
+    }
+
+    .contactparaDiv p {
+        text-align: center;
+    }
+
+    .contactFromDiv {
+        padding: 10px 10px;
+        width: 100%;
+    }
+
+
+    .sayHolleDiv {
+        padding: 12px 10px;
+        gap: 10px;
+    }
+
+    .sayHolleDiv h2 {
+        font-size: 35px;
+    }
+
+    .sayHolleDiv p {
+        max-width: 280px;
+        font-size: 14px;
+    }
+
+    .sayHolleDiv img {
+        max-width: 280px;
+        border-radius: 20px;
+    }
+
+    .sayHolleDiv h3 {
+        font-size: 25px;
+    }
+
+    .sayHolleDiv h4 {
+        font-size: 16px;
+    }
+
+    
+.contactlocationDiv {
+    padding: 12px 10px;
+}
+
+.contactlocationDiv h3 {
+    font-size: 22px;
+}
+
+.contactlocationInnerDiv {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+}
+
+.contlocIcon {
+    width: 20px;
+    height: 20px;
+}
+
+.contactlocationInnerDiv p {
+    font-size: 16px;
+}
+
+
+
+
+}

@@ -1,0 +1,392 @@
+@font-face {
+    font-family: IntertRegular;
+    src: url(../fonts/Intert-Regular.ttf);
+}
+
+@font-face {
+    font-family: RowdiesRegular;
+    src: url(../fonts/Rowdies-Regular.ttf);
+}
+
+* {
+    font-family: IntertRegular;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* SECTION tWO */
+
+.SectionSixLMS {
+    background-color: #fcf6ee;
+}
+
+/* SECTION THREE */
+
+.LMScontactImgDiv1 {
+    position: relative;
+}
+
+.designRotate {
+    top: -40%;
+    left: -8%;
+    width: 250px;
+    position: absolute;
+    z-index: -1;
+    animation: rotatedesign 6.5s infinite linear;
+}
+
+@keyframes rotatedesign {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.ContactFormImg1 {
+    max-width: 400px;
+    border-radius: 20px;
+}
+
+.LMScontactImgDiv2 {
+    position: relative;
+}
+
+.designDots {
+    top: 20%;
+    left: 20%;
+    max-width: 250px;
+    z-index: -1;
+    position: absolute;
+}
+
+.fromtextDiv h3 {
+    font-size: 18px;
+    color: #fc800a;
+    font-weight: 600;
+}
+
+.fromtextDiv h2 {
+    font-family: IntertRegular;
+    font-weight: 600;
+    font-size: 45px;
+    color: #000000;
+}
+
+.fromtextDiv p {
+    font-size: 16px;
+    color: #000000;
+}
+
+.inputDvi1 input {
+    width: 50%;
+    border: 2px dashed transparent;
+    background-color: #fbf1e3cc;
+    border: #fbf1e3cc;
+    padding: 16px 40px;
+    border-radius: 15px;
+}
+
+.input-Dvi2 input {
+    width: 100%;
+    border: 2px dashed transparent;
+    background-color: #fbf1e3cc;
+    border: #fbf1e3cc;
+    padding: 16px 40px;
+    border-radius: 15px;
+}
+
+.input-Dvi2 textarea {
+    width: 100%;
+    border: 2px dashed transparent;
+    background-color: #fbf1e3cc;
+    border: #fbf1e3cc;
+    padding: 16px 40px;
+    border-radius: 15px;
+    height: 215px;
+    overflow: auto;
+    resize: none;
+}
+
+.LMScontactbtn {
+    padding: 12px 40px;
+    background-color: #fc800a;
+    border-radius: 3.125em;
+    font-family: RowdiesRegular;
+    font-size: 16px;
+    color: #ffffff;
+    border: 2px solid transparent;
+    transition: all 0.5s linear;
+}
+
+.LMScontactbtn:hover {
+    background-color: #000000;
+}
+
+.lmscloud {
+    background-color: #ffffff;
+}
+
+@media only screen and (max-width: 1050px) {
+    .SectionthreeLMS {
+        overflow-x: hidden;
+    }
+
+    .SectionthreeLMS {
+        padding: 20px 20px;
+    }
+
+    .LMScontactSec1 {
+        width: 100%;
+    }
+
+    .designRotate {
+        top: -10%;
+        left: -2%;
+        width: 100px;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .ContactFormImg1 {
+        max-width: 250px;
+        border-radius: 20px;
+    }
+
+    .LMScontactImgDiv2 {
+        padding: 0px;
+    }
+
+    .designDots {
+        top: 20%;
+        left: 10%;
+        max-width: 100px;
+        z-index: -1;
+        position: absolute;
+    }
+
+    .LMScontactSec2 {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .fromtextDiv h3 {
+        font-size: 12px;
+    }
+
+    .fromtextDiv h2 {
+        font-size: 24px;
+    }
+
+    .fromtextDiv p {
+        font-size: 12px;
+    }
+
+    .inputDvi1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .inputDvi1 input {
+        width: 100%;
+        border: 2px dashed transparent;
+        background-color: #fbf1e3cc;
+        border: #fbf1e3cc;
+        padding: 16px 40px;
+        border-radius: 15px;
+    }
+
+    .inputDvi2 input {
+        width: 100%;
+        border: 2px dashed transparent;
+        background-color: #fbf1e3cc;
+        border: #fbf1e3cc;
+        padding: 16px 40px;
+        border-radius: 15px;
+    }
+
+    .inputDvi2 textarea {
+        width: 100%;
+        border: 2px dashed transparent;
+        background-color: #fbf1e3cc;
+        border: #fbf1e3cc;
+        padding: 16px 40px;
+        border-radius: 15px;
+        height: 115px;
+        overflow: auto;
+        resize: none;
+    }
+}
+
+.filters {
+    margin-bottom: 4%;
+}
+
+.seeall {
+    margin-top: 4%;
+}
+
+/* alll courses */
+ .coursesWrapper {
+    padding: 3rem 1rem;          /* vertical padding 3rem, horizontal 1rem */
+    max-width: 1400px;           /* slightly wider for large screens */
+    margin: 0 auto;              /* center horizontally */
+    width: 100%;                 /* fill the screen width */
+    box-sizing: border-box;      /* include padding in width calculation */
+}
+
+
+    .skillBadge {
+        display: inline-block;
+        border-radius: 0.375rem;
+        background-color: #f3f4f6;
+        padding: 0.25rem 0.75rem;
+        font-size: 0.75rem;
+        color: #6b7280;
+    }
+
+    .coursebtn {
+        background-color: #fc800a;
+        color: white;
+        padding: 0.75rem 1.5rem;
+        border-radius: 0.5rem;
+        border: none;
+        font-weight: 600;
+        transition: all 0.3s;
+        cursor: pointer;
+    }
+
+    .coursebtn:hover {
+        background-color: #e6720a;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(252, 128, 10, 0.25);
+    }
+
+    /* .loadingSpinner {
+        height: 2rem;
+        width: 2rem;
+        margin: 1rem auto;
+        border: 4px solid #fc800a;
+        border-top-color: transparent;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+    } */
+
+    .paginationWrapper {
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        padding: 1rem;
+        background-color: white;
+        border-radius: 1rem;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .paginationButton {
+        transition: all 0.2s;
+        font-weight: 500;
+    }
+
+    .paginationButton:hover {
+        background-color: rgba(252, 128, 10, 0.1);
+        color: #fc800a;
+    }
+
+    .paginationActive {
+        background-color: #fc800a !important;
+        color: white !important;
+        font-weight: 600;
+    }
+
+    .paginationActive:hover {
+        background-color: #e6720a !important;
+    }
+
+    @keyframes spin {
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    .courseDiv {
+        cursor: pointer;
+        /* margin-top: auto !important; */
+    }
+
+    .courseDiv:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+        border-color: rgba(252, 128, 10, 0.2);
+    }
+
+    .courseDiv h2 {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: #333;
+        margin-top: 1.5rem;
+        line-height: 1.4;
+    }
+
+    .courseImg1div {
+        width: 100%;
+        height: 500px;
+        border-radius: 0.75rem;
+        background-color: #f3f4f6;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .courseImg1 {
+        object-fit: cover;
+        border-radius: 0.75rem;
+        transition: transform 0.5s ease;
+    }
+
+    .courseDiv:hover .courseImg1 {
+        transform: scale(1.05);
+    }
+
+    .line-clamp-6 {
+        display: -webkit-box;
+        /* -webkit-line-clamp: 6; */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        color: #4b5563;
+        line-height: 1.6;
+        font-size: 0.95rem;
+    }
+
+/* =================================== */
+/* Additional Buttons                  */
+/* =================================== */
+
+.clear-button {
+  height: 3.5rem !important;
+  width: 100%; /* Full width on mobile */
+  border-radius: 9999px !important;
+  border: 2px solid #d97706 !important; /* border-amber-600 */
+  background-color: #f59e0b !important; /* bg-amber-500 */
+  color: white !important;
+  font-size: 1rem !important;
+  font-weight: 700 !important;
+  transition: all 0.2s ease-in-out;
+  flex-shrink: 0; /* Prevents the button from shrinking */
+}
+
+.clear-button:hover {
+  background-color: #d97706 !important; /* Darker amber on hover */
+  border-color: #b45309 !important;
+}
+
+/* Adjust dropdown container for the new button on desktop */
+@media (min-width: 768px) {
+  .dropdown-container {
+    align-items: center; /* Vertically align items */
+  }
+
+  .clear-button {
+    width: auto; /* Allow button to size to its content on desktop */
+    padding: 0 1.5rem !important;
+  }
+}

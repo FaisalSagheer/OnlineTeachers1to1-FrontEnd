@@ -1,0 +1,303 @@
+
+
+/* Tabs List Styling */
+.tabs-list {
+  gap: 1.5rem;
+}
+
+@media (max-width: 640px) {
+  .tabs-list {
+    margin-left: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* Tab Triggers */
+.tab-trigger {
+  border: 12px solid #fc800a;
+  background-color: #fc800a;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* About Tab Content */
+.about-single-tab {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.about-svg-content {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+.about-content-box1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.about-content-box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-align: left;
+}
+
+
+/* Duration Tab Content */
+.duration-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.curriculum-tap-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 3.5rem;
+}
+
+@media (max-width: 640px) {
+  .curriculum-tap-content {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
+
+.duration-icon-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.duration-icon-group-small {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.duration-icon {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+/* Instructors Tab Content */
+.instructors-container {
+  margin-top: 1.5rem;
+}
+
+.instructors-scroll-container {
+  max-height: 24rem;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+
+.instructors-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.aboutSingaltab{
+    margin-top: 1rem;
+  }
+@media (max-width: 768px) {
+  .instructors-list {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+  .aboutSingaltab{
+    margin-top: 6rem;
+  }
+
+  .instructors-scroll-container {
+    max-height: 20rem; /* Reduced height for mobile */
+    padding-right: 0.25rem;
+  }
+
+  .instructor-card {
+    min-height: 5rem; /* Ensure minimum touch target */
+  }
+
+  .instructor-image-container {
+    width: 6.5rem; /* Increased mobile width from 5rem to 6.5rem */
+  }
+
+  .instructor-info {
+    padding: 0.5rem;
+  }
+
+  .instructor-name {
+    font-size: 0.9rem;
+    line-height: 1.3;
+  }
+
+  .instructor-status {
+    font-size: 0.7rem;
+    margin-bottom: 0.375rem;
+  }
+
+  .instructor-details {
+    font-size: 0.7rem;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 480px) {
+  .tabs-list {
+    gap: 0.5rem;
+    padding: 0 0.5rem;
+  }
+
+  .tab-trigger {
+    font-size: 0.875rem;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .instructors-scroll-container {
+    max-height: 18rem;
+  }
+
+  .instructor-image-container {
+    width: 5.5rem; /* Increased small screen width from 4.5rem to 5.5rem */
+  }
+
+  .instructor-info {
+    padding: 0.375rem;
+  }
+
+  .instructor-name {
+    font-size: 0.85rem;
+  }
+
+  .instructor-details {
+    font-size: 0.65rem;
+  }
+
+  .about-content-box1 {
+    justify-content: center;
+    gap: 0.75rem;
+  }
+
+  .about-content-box {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+}
+
+.instructor-card {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  display: flex;
+  transition: box-shadow 0.3s ease;
+}
+
+.instructor-card:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.instructor-image-container {
+  position: relative;
+  width: 8rem; /* Increased width from 6rem to 8rem */
+  height: auto;
+  min-height: 100%;
+  border-radius: 0.5rem 0 0 0.5rem;
+  overflow: hidden;
+  flex-shrink: 0;
+  align-self: stretch;
+  padding: 0.5rem;
+  background-color: #f8fafc; /* Added background color */
+}
+
+.instructor-image {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.375rem; /* Added border radius to the image */
+}
+
+.instructor-info {
+  padding: 0.75rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.instructor-name {
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #111827;
+  line-height: 1.2;
+}
+
+.instructor-status {
+  margin-bottom: 0.5rem;
+  font-size: 0.75rem;
+  font-style: italic;
+  color: #059669;
+  font-weight: 500;
+}
+
+.instructor-details {
+  font-size: 0.75rem;
+  color: #1f2937;
+  line-height: 1.3;
+}
+
+.instructor-details > p {
+  margin-bottom: 0.25rem;
+}
+
+.instructor-details .detail-label {
+  font-weight: bold;
+}
+
+.instructor-details .detail-value {
+  font-weight: normal;
+}
+
+.no-instructors-message {
+  text-align: center;
+  width: 100%;
+  color: #6b7280;
+  margin-top: 1rem;
+}
+
+/* Scrollbar Styling */
+.instructors-scroll-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.instructors-scroll-container::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 3px;
+}
+
+.instructors-scroll-container::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+.instructors-scroll-container::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}

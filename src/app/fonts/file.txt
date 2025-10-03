@@ -1,0 +1,31 @@
+ // const router = useRouter();
+
+    // const handleSubmit = async () => {
+    //     try {
+    //         const token = Cookies.get("accessToken");
+    //         if (!token) {
+    //             console.log("No token available SideBar");
+    //             router.push("/");
+    //             return;
+    //         }
+
+    //         const res = await fetch("http://192.168.100.22:8080/api/logout/", {
+    //             method: "POST",
+    //             headers: {
+    //                 "Content-Type": "application/json",
+    //                 Authorization: `Bearer ${token}`,
+    //             },
+    //         });
+    //         const data = await res.json();
+    //               if (res.ok) {
+    //                   router.push("/login");
+    //               } else {
+    //                 alert(data.message || "Logout failed!");
+    //               }
+
+    //     } catch (error) {
+    //         console.error("Login error:", error);
+    //         alert("Something went wrong!");
+    //     }
+
+    // }

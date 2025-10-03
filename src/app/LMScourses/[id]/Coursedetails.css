@@ -1,0 +1,252 @@
+@font-face {
+    font-family: IntertRegular;
+    src: url(../../fonts/Intert-Regular.ttf);
+}
+
+@font-face {
+    font-family: RowdiesRegular;
+    src: url(../../fonts/Rowdies-Regular.ttf);
+}
+
+* {
+    font-family: IntertRegular;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.coursebtn{
+    margin-top: 3%;
+    text-align: center;
+}
+
+.courseSingaImg1div {
+    max-width: 40%;
+    margin-left: 8%;
+    margin-top: 5%;
+
+}
+
+.courseSingalImg1 {
+
+    border-radius: 30px;
+}
+
+.courseSingalDiv {
+     margin-right: 8%;
+    margin-top: 5%;
+    width: 100%;
+    padding: 30px;
+    border-radius: 20px;
+    border: 2px dashed #9e9e9e;
+    background-color: #ffffff;
+}
+
+
+.courseSingalDiv h2 {
+    font-size: 45px;
+    font-family: RowdiesRegular;
+}
+
+.courseSingalDiv p {
+    font-size: 18px;
+}
+
+.courseSingalDiv h3 {
+    font-size: 24px;
+    font-family: RowdiesRegular;
+    color: #fc800a;
+}
+
+.courseSingalDiv h3 span {
+    font-size: 24px;
+    font-family: RowdiesRegular;
+    color: #fc800a;
+    text-decoration: line-through;
+
+}
+
+.ProfileIcon {
+    border-radius: 5px;
+    width: 25px;
+}
+
+.courseSingalDiv h4 {
+    font-size: 18px;
+    font-family: RowdiesRegular;
+}
+
+.aboutSingaltab h2 {
+    font-size: 30px;
+    font-family: RowdiesRegular;
+}
+
+.aboutSingaltab p {
+    font-size: 18px;
+    text-align: justify;
+}
+
+.tabsabout {
+    margin-left: 8%;
+    margin-top: 2%;
+}
+
+.curriculumtapContent {
+    padding: 10px 20px;
+    border-bottom: 2px dashed #000000;
+    flex-wrap: wrap;
+}
+
+.curriculumtapContent h4 {
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #000000;
+    padding: 5px 12px;
+    border-radius: 25px;
+}
+
+.react-tabs__tab {
+    font-size: 25px;
+}
+
+.react-tabs__tab--selected {
+    color: #ffffff !important;
+    background-color: #fc800a !important;
+}
+
+.SingalpagemembertabinnerDiv {
+    width: fit-content;
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: 2px dashed #9e9e9e;
+    background-color: #ffffff;
+}
+
+.SingalpagemembertabinnerDiv h4 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.StudentprofileIcon1 {
+    border-radius: 12px;
+    width: 80px;
+}
+
+.singaltabside {
+    gap: 10px;
+    padding: 30px;
+    border-radius: 20px;
+    border: 2px dashed #9e9e9e;
+    background-color: #88b520;
+}
+
+.singaltabside h3 {
+    font-size: 22px;
+    font-family: RowdiesRegular;
+}
+
+.singaltabsideMainDiv{
+    margin-right: 8%;
+}
+
+.singaltabsideMainDiv h2 {
+    font-size: 30px;
+    font-family: RowdiesRegular;
+}
+
+.singaltabsideMainDiv p {
+    font-size: 18px;
+}
+
+.singaltabsideInnerDiv {
+    align-items: center;
+}
+
+.singaltabside2 {
+    
+    width: fit-content;
+    gap: 10px;
+    padding: 30px;
+    border-radius: 20px;
+    border: 2px dashed #9e9e9e;
+    background-color: #ffffff;
+}
+.confroncolor {
+    background-color: #FCF6EE;
+    margin-left: 9%;
+    margin-bottom: 3%;
+}
+
+
+@media only screen and (max-width: 1050px) {
+
+
+    .SectionSixLMS {
+        padding: 20px 20px;
+        gap: 20px;
+    }
+
+    .singaltabside2 {
+        width: 100%;
+        gap: 10px;
+        padding: 30px;
+        border-radius: 20px;
+        border: 2px dashed #9e9e9e;
+        background-color: #ffffff;
+    }
+
+    .singaltabside2 {
+        white-space: wrap;
+        flex-wrap: wrap;
+    }
+
+    .courseSingaImg1div {
+        min-width: 100%;
+    }
+
+    .courseSingalImg1 {
+        width: 100%;
+    }
+
+    .courseSingalDiv {
+        padding: 20px;
+    }
+
+
+    .courseSingalDiv h2 {
+        font-size: 25px;
+    }
+
+    .courseSingalDiv p {
+        font-size: 14px;
+    }
+
+    .courseSingalDiv h3 {
+        font-size: 18px;
+    }
+
+    .courseSingalDiv h3 span {
+        font-size: 18px;
+    }
+
+    .react-tabs__tab {
+        font-size: 12.5px;
+    }
+
+    .aboutSingaltab h2 {
+        font-size: 20px;
+    }
+    
+    .aboutSingaltab p {
+        font-size: 14px;
+    }
+
+    .curriculumtapContent {
+        gap: 20px;
+    }
+    .confroncolor {
+        padding: 20px 20px;
+    }
+    
+
+
+}
