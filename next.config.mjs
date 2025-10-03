@@ -11,7 +11,7 @@ const nextConfig = {
       {
         protocol:'https',
         hostname:'online-teachers1to1.vercel.app',
-        pathname: '/media/**',
+        // pathname: '/media/**',
       }
     ],
   },
